@@ -42,7 +42,7 @@ interface ImageCardProps {
 	alt: string;
 	h?: `h-[${number}${"em" | "rem" | "%" | "vh" | "px"}]`;
 	fit?: "contain" | "cover";
-	max_w?: `max-w-[${number}${"em" | "rem" | "%" | "vh" | "px"}]` | null;
+	max_w?: `max-w-[${number}${"em" | "rem" | "%" | "vw" | "px"}]` | null;
 }
 
 export function ImageCard({
@@ -54,19 +54,13 @@ export function ImageCard({
 }: ImageCardProps) {
 	const containerClass = `p-4 bg-transparent rounded-md relative 
 				overflow-hidden ${h} ${max_w}}`;
+	const imageClass = fit === "contain" ? "object-contain" : "object-cover";
 	return (
 		<div
-			className={`bg-clip-border bg-gradient-to-tr from-emerald-400 to-blue-600 border-0 p-1 my-6 rounded-lg bg-fixed ${max_w}`}
+			className={`bg-clip-border bg-gradient-to-tr from-emerald-400 to-blue-600 border-0 p-3 my-6 rounded-lg bg-fixed ${max_w}`}
 		>
 			<div className={containerClass}>
-				<Image
-					src={src}
-					alt={alt}
-					fill={true}
-					className={
-						fit === "contain" ? "object-contain" : "object-cover"
-					}
-				/>
+				<Image src={src} alt={alt} fill={true} className={imageClass} />
 			</div>
 		</div>
 	);

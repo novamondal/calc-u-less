@@ -14,8 +14,10 @@ export default function AnimatedCard({
 	const { inView, ref, entry } = useInView({
 		/* Optional options */
 		threshold:
-			animationType === "Expand_From_Left" || animationType === "Fade"
+			animationType === "Expand_From_Left"
 				? 0.9
+				: animationType === "Fade"
+				? 0.4
 				: 0,
 		triggerOnce: animationType === "Expand_From_Left",
 	});

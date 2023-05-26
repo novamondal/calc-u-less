@@ -10,7 +10,13 @@ export default function Home() {
 				</p>
 				<div className="fixed bottom-8 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black">
 					<p className="pointer-events-none flex place-items-center gap-2 p-8">
-						Questions generated with ChatGPT
+						Questions and research done with ChatGPT
+					</p>
+					<p className="pointer-events-none flex place-items-center gap-2 p-8">
+						AI Images made with NightCafe
+					</p>
+					<p className="pointer-events-none flex place-items-center gap-2 p-8">
+						AI Voices made with FakeYou
 					</p>
 					<p className="pointer-events-none flex place-items-center gap-2 p-8">
 						Code by Nova Mondal
