@@ -1,5 +1,3 @@
-"use client";
-
 interface QuestionFieldProps {
 	value: number | null;
 	answer: number;
@@ -16,8 +14,8 @@ export default function QuestionField({
 	bonus = false,
 }: QuestionFieldProps) {
 	return (
-		<div className="my-4 border-2 bg-clip-border bg-gradient-to-bl from-orange-700 to-yellow-400 border-transparent rounded-sm bg-fixed">
-			<div className="bg-zinc-900 p-2 relative">
+		<div className="my-6 border-2 bg-clip-border bg-gradient-to-bl from-orange-700 to-yellow-400 border-transparent rounded-lg bg-fixed">
+			<div className="bg-zinc-900 p-2 relative rounded-lg">
 				<div>{children}</div>
 				<input
 					onChange={(e) => {

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<main className="flex min-h-screen flex-col items-center justify-between p-24">
-			<div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm">
+			<div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-md">
 				<p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit">
 					Nova Mondal, Emma Tudor, and Alexander Trintchouk
 				</p>
@@ -18,33 +18,39 @@ export default function Home() {
 					<p className="pointer-events-none flex place-items-center gap-2 p-8">
 						AI Voices made with FakeYou
 					</p>
-					<p className="pointer-events-none flex place-items-center gap-2 p-8">
-						Code by Nova Mondal
+					<p className="flex place-items-center gap-2 p-8">
+						Code by{" "}
+						<Link
+							className="underline hover:text-indigo-400"
+							href={"https://github.com/novamondal/"}
+						>
+							Nova Mondal
+						</Link>
 					</p>
 				</div>
-				<div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-transparent">
+				<div className="fixed bottom-0 left-0 flex w-full items-end justify-center bg-transparent">
 					<Link
-						className="flex place-items-center gap-2 p-8 underline"
+						className="mb-6 underline hover:text-indigo-400"
 						href={"https://github.com/novamondal/calc-u-less"}
 					>
 						View source code on GitHub
 					</Link>
 				</div>
-				<h1 className="text-5xl font-bold">
+				<h1 className="text-7xl font-bold">
 					The History of Calculus and Alternate Numbering Systems
 				</h1>
-				<h2 className="text-3xl my-1">Calc BC Final Project</h2>
+				<h2 className="text-4xl my-1">Calc BC Final Project</h2>
 				<div className="flex flex-col">
 					<Link
 						href={"/timelines/history"}
-						className="text-3xl underline my-4 hover:text-indigo-400"
+						className="text-5xl underline my-4 hover:text-indigo-400 w-fit"
 					>
 						History of Calculus
 					</Link>
 
 					<Link
 						href={"/timelines/numbering"}
-						className="text-3xl underline my-4 hover:text-indigo-400"
+						className="text-5xl underline my-4 hover:text-indigo-400 w-fit"
 					>
 						Alternate Numbering Systems
 					</Link>

@@ -4,6 +4,7 @@ import { useState } from "react";
 import QuestionField from "../../QuestionField";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../../../../../firebase";
+import { INCORRECT_ALERT_MESSAGE } from "@/constants";
 
 export default function NumberingQuiz({ params }: any) {
 	const [name, setName] = useState<string>("");
@@ -33,6 +34,7 @@ export default function NumberingQuiz({ params }: any) {
 			return;
 		} else {
 			e.preventDefault();
+			alert(INCORRECT_ALERT_MESSAGE);
 			return;
 		}
 	}
