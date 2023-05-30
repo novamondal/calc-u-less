@@ -24,10 +24,10 @@ export default function QuestionField({
 						);
 					}}
 					value={value ?? ""}
-					className="bg-zinc-900 border-2 border-zinc-700 rounded-md p-2 after:hidden"
+					className="bg-zinc-900 border-2 border-zinc-700 rounded-md p-2 max-w-full after:hidden"
 					type="number"
 				></input>
-				<h1 className="absolute right-8 bottom-8">
+				<h1 className="absolute right-8 top-2">
 					{bonus ? "" : value === answer ? "✅" : "❌"}
 				</h1>
 			</div>

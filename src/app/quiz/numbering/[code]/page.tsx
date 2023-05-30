@@ -40,14 +40,17 @@ export default function NumberingQuiz({ params }: any) {
 	}
 	return (
 		<div className="text-4xl">
-			<h1>Name: </h1>
+			<h1 className="mt-[-6rem] mb-8 font-bold bg-clip-text bg-gradient-radial from-orange-200 via-orange-400 to-rose-400 text-transparent">
+				Numbering Systems Quiz
+			</h1>
+			<h2 className="">Name: </h2>
 			<input
 				type="text"
 				onChange={(e) => {
 					setName(e.target.value);
 				}}
 				value={name}
-				className="bg-zinc-900 border-2 border-zinc-700 rounded-md p-2"
+				className="bg-zinc-900 border-2 border-zinc-700 rounded-md p-2 max-w-full"
 			></input>
 			<QuestionField value={value} setValue={setValue} answer={valueAns}>
 				<h1> Test question</h1>

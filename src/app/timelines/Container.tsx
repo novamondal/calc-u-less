@@ -8,15 +8,18 @@ export default function TimelineContainer({
 	children,
 }: TimelineContainerProps) {
 	return (
-		<div className="bg-gradient-to-b from-black from-0% via-20% to-[rgba(255,255,255,0.03)] via-gray-900 w-screen h-screen px-6 py-2 items-center overflow-clip">
-			<h1 className="text-6xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-tr from-red-400 to-orange-200 w-full pb-2">
-				{title}
-			</h1>
-			<div className="h-[95%] w-full relative overflow-y-scroll overflow-x-hidden border-red-300 bg-transparent mt-2 rounded-lg tallParent">
+		<>
+			<div className="relative overflow-x-hidden bg-transparent px-6 pt-64 md:pt-56 tallParent">
 				{children}
 				<div className="h-[10vh]"></div>
 			</div>
-		</div>
+			<header className="fixed inset-0 bg-gradient-to-b from-black via-[#000000DD] via-80% z-10 h-min">
+				<h1 className="lg:text-6xl sm:text-3xl text-xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-tr from-red-400 to-orange-200 w-full pb-2 inset-0">
+					{title}
+				</h1>
+			</header>
+			<div className="fixed -z-50 bg-gradient-to-b from-black from-0% via-20% to-[rgba(255,255,255,0.03)] via-gray-900 bg-fixed w-screen h-screen inset-0"></div>
+		</>
 	);
 }
 

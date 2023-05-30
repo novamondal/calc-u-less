@@ -8,7 +8,7 @@ export default function Home() {
 				<p className="fixed left-0 top-0 flex w-full justify-center border-b bg-gradient-to-b pb-6 pt-8 backdrop-blur-2xl border-neutral-800 bg-zinc-800/30 from-inherit">
 					Nova Mondal, Emma Tudor, and Alexander Trintchouk
 				</p>
-				<div className="fixed bottom-8 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-black via-black">
+				<div className="fixed bottom-0 pb-8 left-0 flex h-48 w-full sm:text-sm text-xs items-end justify-center bg-gradient-to-t from-black via-black">
 					<p className="pointer-events-none flex place-items-center gap-2 p-8">
 						Questions and research aided by ChatGPT
 					</p>
@@ -36,21 +36,23 @@ export default function Home() {
 						View source code on GitHub
 					</Link>
 				</div>
-				<h1 className="text-7xl font-bold">
-					The History of Calculus and Alternate Numbering Systems
+				<h1 className="md:text-7xl text-5xl font-bold">
+					Alternative Numbering Systems and The History of Calculus
 				</h1>
-				<h2 className="text-4xl my-1">Calc BC Final Project</h2>
+				<h2 className="md:text-4xl text-lg my-1">
+					Calc BC Final Project
+				</h2>
 				<div className="flex flex-col">
 					<Link
 						href={"/timelines/history"}
-						className="text-5xl underline my-4 hover:text-indigo-400 w-fit"
+						className="md:text-5xl text-2xl underline my-4 hover:text-indigo-400 w-fit"
 					>
 						History of Calculus
 					</Link>
 
 					<Link
 						href={"/timelines/numbering"}
-						className="text-5xl underline my-4 hover:text-indigo-400 w-fit"
+						className="md:text-5xl text-2xl underline my-4 hover:text-indigo-400 w-fit"
 					>
 						Alternate Numbering Systems
 					</Link>

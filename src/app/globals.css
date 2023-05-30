@@ -32,6 +32,9 @@ html {
 	}
 	.tallParent {
 		@apply xl:snap-y xl:snap-mandatory;
+		height: 100vh;
+		height: 100svh;
+		scroll-padding-top: 4rem;
 	}
 	.tallAbsolute {
 		@apply xl:absolute xl:bottom-4;

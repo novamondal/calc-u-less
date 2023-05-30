@@ -31,7 +31,7 @@ export default function QuizLink({
 		<div className="w-[75vw] overflow-hidden">
 			<AnimatedCard animationType="Fade">
 				<BasicCard header="Take the Quiz!">
-					<div className="xl:flex xl:flex-row xl:items-center xl:justify-center xl:relative px-2">
+					<div className="xl:flex xl:flex-row xl:items-center xl:justify-center xl:relative sm:px-2">
 						<div className="flex flex-col">
 							<div>
 								<h2 className="text-teal-200 mx-4 mt-4 text-2xl">
@@ -60,7 +60,7 @@ export default function QuizLink({
 									// quiz
 									// 	? "mx-4 mb-4 text-2xl w-min underline hover:text-indigo-400"
 									// 	: "hidden"
-									`mx-4 mb-4 xl:text-2xl w-min underline hover:text-indigo-400 ${
+									`sm:mx-4 mb-4 xl:text-2xl sm:text-md text-xs w-min underline hover:text-indigo-400 ${
 										quiz
 											? ""
 											: "opacity-[10%] pointer-events-none"

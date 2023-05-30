@@ -12,7 +12,7 @@ export default function TextCard({ header, body }: TextCardProps) {
 				<h2 className="text-3xl bg-clip-text bg-gradient-to-tr from-green-300 to-blue-600 text-transparent">
 					{header}
 				</h2>
-				<p className="text-2xl">{body}</p>
+				<p className="md:text-2xl text-md">{body}</p>
 			</div>
 		</div>
 	);

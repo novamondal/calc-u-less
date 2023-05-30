@@ -13,7 +13,7 @@ export default function HistoryOfCalc() {
 					{/* <AnimatedCard animationType="Fade"> */}
 					<TextCard
 						header="What is a numbering system?"
-						body="A numbering system is the way you write down numbers using digits. Most people are only familiar with decimal, where digits are 0-9, but there are many more ways to count"
+						body="A numbering system is the way you write down numbers using digits. Most people are only familiar with decimal, where digits are 0-9, but there are many more numbering systems"
 					/>
 				</AnimatedCard>
 				<div className="tallAbsolute">
@@ -52,7 +52,7 @@ export default function HistoryOfCalc() {
 					</AnimatedCard>
 					<AnimatedCard animationType="Slide_From_Right">
 						<BasicCard header="Applications of Base 10">
-							<ul className="list-disc list-inside text-2xl">
+							<ul className="list-disc list-inside md:text-2xl text-md">
 								<li>Most day-to-day math and arithmetic</li>
 								<li>Measurements</li>
 								<li>Currency</li>
@@ -93,12 +93,12 @@ export default function HistoryOfCalc() {
 				<div className="relative xl:flex xl:flex-row xl:gap-6">
 					<AnimatedCard animationType="Expand_From_Left">
 						<BasicCard header="Binary (Base 2) Numbering">
-							<p className="2xl:text-2xl text-lg transition-all ease-in-out">
+							<p className="2xl:text-2xl sm:text-lg text-sm transition-all ease-in-out">
 								{" "}
 								Binary is the language computers understand and
 								has many applications with computers
 							</p>
-							<ul className="list-disc list-inside 2xl:text-2xl text-lg transition-all ease-in-out">
+							<ul className="list-disc list-inside 2xl:text-2xl sm:text-lg text-sm transition-all ease-in-out">
 								<li>Binary only has 2 digits, 0 or 1</li>
 								<li>
 									Each digit represents a power of 2 (1 in
@@ -231,7 +231,7 @@ export default function HistoryOfCalc() {
 						</BasicCard>
 					</AnimatedCard>
 					<AnimatedCard animationType="Expand_From_Top">
-						<div className="2xl: w-[50vw]">
+						<div className="xl:w-[50vw] 2xl:w-[60vw] transition-all ease-in-out">
 							<BasicCard header="">
 								<div className="h-[50vh]">
 									TODO: Make a cool graphic and animate it

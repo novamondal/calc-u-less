@@ -65,7 +65,7 @@ export default function AudioCard({ src, label }: AudioPlayerProps) {
 						{label}
 					</h2>
 					<div className="flex items-center justify-center">
-						<button
+						{/* <button
 							onClick={() => {
 								setMuted((p) => !p);
 							}}
@@ -77,14 +77,14 @@ export default function AudioCard({ src, label }: AudioPlayerProps) {
 							) : (
 								<BiVolumeMute size="2em" color="#F43F5E" />
 							)}
-						</button>
+						</button> */}
 						<button
 							onClick={() => {
 								if (audioRef.current?.currentTime) {
 									audioRef.current.currentTime = 0;
 								}
 							}}
-							className="active:opacity-[50%] transition-all duration-100 mx-4"
+							className="active:opacity-[50%] transition-all duration-100 mx-2"
 							type="button"
 						>
 							<HiArrowUturnLeft size="2em" color="#F43F5E" />
@@ -93,7 +93,7 @@ export default function AudioCard({ src, label }: AudioPlayerProps) {
 							onClick={() => {
 								setPlay((p) => !p);
 							}}
-							className="active:opacity-[50%] transition-all duration-100 mx-4"
+							className="active:opacity-[50%] transition-all duration-100 mx-2"
 							type="button"
 						>
 							{play ? (
@@ -111,7 +111,7 @@ export default function AudioCard({ src, label }: AudioPlayerProps) {
 						<input
 							ref={progressRef}
 							type="range"
-							className="w-1/2 min-w-[8rem] appearance-none bg-gradient-to-r from-rose-400 to-orange-500 h-1 rounded-md"
+							className="w-1/2 min-w-[6rem] appearance-none bg-gradient-to-r from-rose-400 to-orange-500 h-1 rounded-md"
 							// disabled={true}
 							onChange={(e) => {
 								if (audioRef.current?.duration) {
