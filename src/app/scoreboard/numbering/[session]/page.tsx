@@ -57,8 +57,8 @@ export default function Scoreboard({ params }: any) {
 
 	if (data?.[0])
 		return (
-			<div className="flex flex-col justify-start items-center px-8">
-				<h1 className="text-5xl text-center font-bold my-4 bg-clip-text bg-gradient-to-tr from-emerald-300 to-green-500 text-transparent pb-2">
+			<div className="flex flex-col justify-start items-center px-8 bg-gradient-conic from-transparent via-zinc-950 bg-fixed h-screen">
+				<h1 className="text-5xl text-center font-bold my-4 bg-clip-text bg-gradient-to-tr from-rose-300 to-orange-500 text-transparent pb-2">
 					Leaderboard for Alternate Numbering Systems:{" "}
 					{params?.session}{" "}
 				</h1>

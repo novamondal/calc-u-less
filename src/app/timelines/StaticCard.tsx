@@ -12,7 +12,7 @@ export default function TextCard({ header, body }: TextCardProps) {
 				<h2 className="text-3xl bg-clip-text bg-gradient-to-tr from-green-300 to-blue-600 text-transparent">
 					{header}
 				</h2>
-				<p className="text-lg">{body}</p>
+				<p className="text-2xl">{body}</p>
 			</div>
 		</div>
 	);
@@ -41,6 +41,7 @@ interface ImageCardProps {
 	src: string;
 	alt: string;
 	h?: `h-[${number}${"em" | "rem" | "%" | "vh" | "px"}]`;
+	xl_h?: `xl:h-[${number}${"em" | "rem" | "%" | "vh" | "px"}]` | null;
 	fit?: "contain" | "cover";
 	max_w?: `max-w-[${number}${"em" | "rem" | "%" | "vw" | "px"}]` | null;
 }
@@ -50,10 +51,11 @@ export function ImageCard({
 	alt,
 	h = "h-[16em]",
 	fit = "cover",
+	xl_h = null,
 	max_w = null,
 }: ImageCardProps) {
 	const containerClass = `p-4 bg-transparent rounded-md relative 
-				overflow-hidden ${h} ${max_w}}`;
+				overflow-hidden ${xl_h} ${h} ${max_w}}}`;
 	const imageClass = fit === "contain" ? "object-contain" : "object-cover";
 	return (
 		<div

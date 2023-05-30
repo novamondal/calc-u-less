@@ -3,7 +3,13 @@
 import { useInView } from "react-intersection-observer";
 
 interface AnimatedCardProps {
-	animationType: "Slide_From_Right" | "Fade" | "Expand_From_Left";
+	animationType:
+		| "Slide_From_Right"
+		| "Fade"
+		| "Expand_From_Left"
+		| "Expand_From_Right"
+		| "Slide_From_Left"
+		| "Expand_From_Top";
 	children: React.ReactNode;
 }
 
@@ -19,7 +25,7 @@ export default function AnimatedCard({
 				: animationType === "Fade"
 				? 0.4
 				: 0,
-		triggerOnce: animationType === "Expand_From_Left",
+		// triggerOnce: animationType === "Expand_From_Left",
 	});
 
 	let offscreenStyle = "";
@@ -29,9 +35,14 @@ export default function AnimatedCard({
 
 	switch (animationType) {
 		case "Slide_From_Right":
-			offscreenStyle = "translate-x-full";
+			offscreenStyle = "translate-x-1/2 opacity-0";
 			onscreenStyle = "translate-x-0";
-			staticStyle = "duration-300 delay-300";
+			staticStyle = "duration-700 delay-300";
+			break;
+		case "Slide_From_Left":
+			offscreenStyle = "-translate-x-1/2 opacity-0";
+			onscreenStyle = "translate-x-0";
+			staticStyle = "duration-700 delay-300";
 			break;
 		case "Fade":
 			offscreenStyle = "opacity-0";
@@ -39,10 +50,22 @@ export default function AnimatedCard({
 			staticStyle = "duration-700 delay-100";
 			break;
 		case "Expand_From_Left":
-			offscreenStyle = "w-0";
-			onscreenStyle = "w-full";
+			offscreenStyle = "scale-x-0 opacity-0";
+			onscreenStyle = "scale-x-100";
 			staticStyle =
-				"duration-1000 delay-700 relative left-0 overflow-hidden max-h-[60vh]";
+				"duration-1000 delay-700 relative left-0 overflow-hidden origin-left";
+			break;
+		case "Expand_From_Right":
+			offscreenStyle = "scale-x-0 opacity-0";
+			onscreenStyle = "scale-x-100";
+			staticStyle =
+				"duration-1000 delay-700 relative left-0 overflow-hidden origin-right";
+			break;
+		case "Expand_From_Top":
+			offscreenStyle = "scale-y-0 opacity-0";
+			onscreenStyle = "scale-y-100";
+			staticStyle =
+				"duration-1000 delay-700 relative left-0 overflow-hidden origin-top";
 			break;
 	}
 

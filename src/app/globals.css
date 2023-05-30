@@ -19,8 +19,26 @@ body {
 }
 
 html {
-	overflow: scroll;
+	overflow-y: scroll;
 	overflow-x: hidden;
+}
+
+@media (min-height: 900px) {
+	.tallChild {
+		@apply xl:h-screen;
+	}
+	.tallGrandchild {
+		@apply xl:flex xl:gap-6 xl:relative;
+	}
+	.tallParent {
+		@apply xl:snap-y xl:snap-mandatory;
+	}
+	.tallAbsolute {
+		@apply xl:absolute xl:bottom-4;
+	}
+	.tallRight {
+		@apply xl:right-0;
+	}
 }
 
 input::-webkit-outer-spin-button,

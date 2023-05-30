@@ -20,6 +20,9 @@ module.exports = {
 				2000: "2000ms",
 				12000: "12000ms",
 			},
+			screens: {
+				"2xl": "1920px",
+			},
 		},
 		fontFamily: {
 			sans: ["Inter", "sans-serif"],
