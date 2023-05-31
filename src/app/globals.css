@@ -31,7 +31,7 @@ html {
 		@apply xl:flex xl:gap-6 xl:relative;
 	}
 	.tallParent {
-		@apply xl:snap-y xl:snap-mandatory;
+		@apply xl:snap-y xl:snap-proximity;
 		height: 100vh;
 		height: 100svh;
 		scroll-padding-top: 4rem;
