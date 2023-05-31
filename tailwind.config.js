@@ -22,6 +22,7 @@ module.exports = {
 			},
 			screens: {
 				"2xl": "1920px",
+				"xl": "1305px",
 			},
 		},
 		fontFamily: {

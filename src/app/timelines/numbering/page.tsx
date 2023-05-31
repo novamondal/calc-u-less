@@ -162,11 +162,11 @@ export default function HistoryOfCalc() {
 			<TimelineCard reverse>
 				<AnimatedCard animationType="Expand_From_Left">
 					<BasicCard header="Converting to Binary">
-						<ol className="list-inside list-decimal text-2xl font-bold">
+						<ol className="list-inside list-decimal 2xl:text-2xl xl:text-xl text-lg font-bold">
 							<li>
 								Take number and divide by 2, write down
 								remainder
-								<p className="text-xl font-normal ml-8">
+								<p className="xl:text-xl font-normal ml-8">
 									<span className="font-semibold">
 										Example:
 									</span>{" "}
@@ -176,7 +176,7 @@ export default function HistoryOfCalc() {
 							<li>
 								Take the quotient from the previous step, divide
 								by 2 again and record the remainder again
-								<p className="text-xl font-normal ml-8">
+								<p className="xl:text-xl font-normal ml-8">
 									<span className="font-semibold">
 										Example:
 									</span>{" "}
@@ -187,20 +187,20 @@ export default function HistoryOfCalc() {
 							<li>
 								Repeat previous step until quotient is 0, adding
 								remainders into list
-								<p className="text-xl font-normal ml-8">
+								<p className="xl:text-xl font-normal ml-8">
 									<span className="font-semibold">
 										Example:
 									</span>{" "}
 									3/2 = 1 remainder 1, remainders = [1,0,1]
 								</p>
-								<p className="text-xl font-normal ml-8">
+								<p className="xl:text-xl font-normal ml-8">
 									1/2 = 0 remainder 1, remainders = [1,0,1,1]
 								</p>
 							</li>
 							<li>
 								Reverse the list of remainders to get the number
 								in Binary
-								<p className="text-xl font-normal ml-8">
+								<p className="xl:text-xl font-normal ml-8">
 									<span className="font-semibold">
 										Example:
 									</span>{" "}
@@ -233,7 +233,7 @@ export default function HistoryOfCalc() {
 					<AnimatedCard animationType="Expand_From_Top">
 						<div className="xl:w-[50vw] 2xl:w-[60vw] transition-all ease-in-out">
 							<BasicCard header="">
-								<div className="h-[50vh]">
+								<div className="h-[55vh]">
 									TODO: Make a cool graphic and animate it
 								</div>
 							</BasicCard>
@@ -245,6 +245,133 @@ export default function HistoryOfCalc() {
 						<AudioCard src="" label="Converting to Binary" />
 					</AnimatedCard>
 				</div>
+			</TimelineCard>
+			{/* Base 16 */}
+			<TimelineCard>
+				<AnimatedCard animationType="Expand_From_Left">
+					<BasicCard header="Hexadecimal (Base 16) Numbering">
+						<p className="text-xl">
+							Another numbering system commonly used in computer
+							science is hexadecimal, or base 16. It is common in
+							computer science because one hexadecimal digit can
+							represent 4 bits, so an entire byte can be
+							represented in just 2 hex digits.
+						</p>
+						<ul className=" list-disc list-inside 2xl:text-2xl text-lg ">
+							<li>There are 16 digits representing 0-15</li>
+							<li>
+								0-9 are represented with their normal digits,
+								and 10-15 are represented with A-F
+							</li>
+							<li>
+								Each digit represents a coefficient times a
+								power of 16 starting with 16<sup>0</sup> on the
+								right
+							</li>
+							<li>
+								Hexadecimal numbers are usually prefixed to
+								indicate they are a hexadecimal. On the
+								Ti-Nspire, hexadecimal numbers are prefixed with{" "}
+								<code className="font-mono bg-neutral-900 p-1 rounded-lg shadow-lg">
+									0h
+								</code>
+								, but in most programming languages (like
+								JavaScript, C, or Java) they are prefixed with{" "}
+								<span className="font-mono bg-neutral-900 p-1 rounded-lg shadow-lg">
+									0x
+								</span>
+							</li>
+							<li>
+								<span className="font-bold">Example: </span>{" "}
+								0x1A = 1*16<sup>1</sup> + 10*16<sup>0</sup> = 26
+							</li>
+						</ul>
+					</BasicCard>
+				</AnimatedCard>
+				<div>
+					<AnimatedCard animationType="Expand_From_Right">
+						<BasicCard header="Applications of Hexadecimal">
+							<p className="text-xl">
+								Hex numbering has many applications, primarily
+								in computer science due to its ability to
+								efficiently represent binary data. It offers a
+								sytem that is easier for computers to represent
+								compared to base 10, but is easier for humans to
+								understand than binary. These uses include:
+							</p>
+							<ul className="list-disc list-inside 2xl:text-2xl text-lg">
+								<li>
+									Colors using hex color codes (for example,
+									black is #000000)
+								</li>
+								<li>
+									Base16 string encoding to represent text as
+									numbers
+								</li>
+								<li>Program error codes</li>
+								<li>
+									Memory addresses in low-level systems
+									languages like Rust, C, and C++, or in
+									assembly
+								</li>
+								<li>
+									Representing the binary machine code that
+									computers read in a more compact way
+								</li>
+							</ul>
+						</BasicCard>
+					</AnimatedCard>
+					<AnimatedCard animationType="Expand_From_Top">
+						<div className="w-[90vw] xl:w-full ">
+							<ImageCard
+								src="/hex.jpg"
+								alt="hexadecimal numbering"
+								xl_h="xl:h-[30vh]"
+							/>
+						</div>
+					</AnimatedCard>
+				</div>
+				<div className="tallAbsolute">
+					<AnimatedCard animationType="Slide_From_Left">
+						<AudioCard src="" label="Hexadecimal Numbering" />
+					</AnimatedCard>
+					<AnimatedCard animationType="Slide_From_Right">
+						<AudioCard src="" label="Applications of Hexadecimal" />
+					</AnimatedCard>
+				</div>
+			</TimelineCard>
+			{/* Base 60 */}
+			<TimelineCard>
+				<AnimatedCard animationType="Slide_From_Left">
+					<BasicCard header="Base 60 Numbering">
+						<p className="text-xl">
+							There is another numbering system that we use every
+							day without realizing it: Base 60. It was developed
+							by the Sumerians in the 3rd millenium BC, and was
+							later used by the Babylonians, Egyptians, and
+							Greeks.
+						</p>
+					</BasicCard>
+				</AnimatedCard>
+				<AnimatedCard animationType="Slide_From_Right">
+					<BasicCard header="Applications of Base 60">
+						<p className="text-xl">
+							Although base 60 numeral systems are rare, there are
+							still many situations today where base 60 numbering
+							is used, including:
+						</p>
+						<ul className=" list-disc list-inside text-xl">
+							<li>
+								Time (60 seconds in a minute, 60 minutes in an
+								hour)
+							</li>
+							<li>Angles (360 degrees in a circle)</li>
+							<li>
+								Geographic coordinates (Latitude and Longitude)
+							</li>
+						</ul>
+					</BasicCard>
+				</AnimatedCard>
 			</TimelineCard>
 			{/* Quiz Link */}
 			<TimelineCard>

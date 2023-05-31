@@ -32,12 +32,12 @@ export default function AnimatedCard({
 		case "Slide_From_Right":
 			offscreenStyle = "translate-x-1/2 opacity-0";
 			onscreenStyle = "translate-x-0";
-			staticStyle = "duration-700 2xl:delay-300";
+			staticStyle = "duration-700 2xl:delay-1000";
 			break;
 		case "Slide_From_Left":
 			offscreenStyle = "-translate-x-1/2 opacity-0";
 			onscreenStyle = "translate-x-0";
-			staticStyle = "duration-700 2xl:delay-300";
+			staticStyle = "duration-700 2xl:delay-1000";
 			break;
 		case "Fade":
 			offscreenStyle = "opacity-0";
@@ -48,19 +48,18 @@ export default function AnimatedCard({
 			offscreenStyle = "scale-x-0 opacity-0";
 			onscreenStyle = "scale-x-100";
 			staticStyle =
-				"duration-1000 2xl:delay-700 relative left-0 overflow-hidden origin-left";
+				"duration-1000 2xl:delay-100 relative left-0 overflow-hidden origin-left";
 			break;
 		case "Expand_From_Right":
 			offscreenStyle = "scale-x-0 opacity-0";
 			onscreenStyle = "scale-x-100";
 			staticStyle =
-				"duration-1000 2xl:delay-700 relative left-0 overflow-hidden origin-right";
+				"duration-1000 2xl:delay-100 relative left-0 overflow-hidden origin-right";
 			break;
 		case "Expand_From_Top":
 			offscreenStyle = "scale-y-0 opacity-0";
 			onscreenStyle = "scale-y-100";
-			staticStyle =
-				"duration-1000 2xl:delay-700 relative left-0 overflow-hidden origin-top";
+			staticStyle = "duration-1000 2xl:delay-100 origin-top scale-x-100";
 			break;
 	}
 
