@@ -1,4 +1,4 @@
-export const DOMAIN_NAME = "localhost:3000"; //TODO: put actual domain here
+export const DOMAIN_NAME = "welovehanafi.vercel.app"; //TODO: put actual domain here
 export const HISTORY_QUIZ_URL_BASE = "/quiz/history/";
 export const HISTORY_SCORE_URL_BASE = "/scoreboard/history/";
 export const NUMBERING_SCORE_URL_BASE = "/scoreboard/numbering/";
