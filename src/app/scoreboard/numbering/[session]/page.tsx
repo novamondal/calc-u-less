@@ -12,7 +12,7 @@ import {
 	DocumentData,
 } from "firebase/firestore";
 import { db } from "../../../../../firebase";
-import { ScoreboardCard } from "../../history/[session]/page";
+import { ScoreboardCard } from "../../history/[session]/ScoreboardCard";
 import { useState, useEffect } from "react";
 
 function getList(
