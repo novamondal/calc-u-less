@@ -23,6 +23,12 @@ html {
 	overflow-x: hidden;
 }
 
+@layer base {
+	code {
+		@apply font-mono font-light bg-slate-800 text-white rounded-md py-1 px-2 shadow-black shadow-sm;
+	}
+}
+
 @media (min-height: 950px) {
 	.tallChild {
 		@apply xl:h-screen;
@@ -31,7 +37,7 @@ html {
 		@apply xl:flex xl:gap-6 xl:relative;
 	}
 	.tallParent {
-		@apply xl:snap-y xl:snap-proximity;
+		@apply xl:snap-y xl:snap-mandatory;
 		height: 100vh;
 		height: 100svh;
 		scroll-padding-top: 4rem;

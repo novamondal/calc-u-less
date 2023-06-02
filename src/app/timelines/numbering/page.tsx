@@ -80,8 +80,8 @@ export default function HistoryOfCalc() {
 				<AnimatedCard animationType="Slide_From_Left">
 					<div className="xl:w-[45vw] w-[90vw]">
 						<ImageCard
-							src="/hand.jpg"
-							alt="sticky hand"
+							src="/fingers.jpg"
+							alt="hand"
 							xl_h="xl:h-[40em]"
 							h="h-[30vh]"
 						/>
@@ -272,14 +272,9 @@ export default function HistoryOfCalc() {
 								Hexadecimal numbers are usually prefixed to
 								indicate they are a hexadecimal. On the
 								Ti-Nspire, hexadecimal numbers are prefixed with{" "}
-								<code className="font-mono bg-neutral-900 p-1 rounded-lg shadow-lg">
-									0h
-								</code>
-								, but in most programming languages (like
-								JavaScript, C, or Java) they are prefixed with{" "}
-								<span className="font-mono bg-neutral-900 p-1 rounded-lg shadow-lg">
-									0x
-								</span>
+								<code>0h</code>, but in most programming
+								languages (like JavaScript, C, or Java) they are
+								prefixed with <code>0x</code>
 							</li>
 							<li>
 								<span className="font-bold">Example: </span>{" "}
@@ -342,36 +337,140 @@ export default function HistoryOfCalc() {
 			</TimelineCard>
 			{/* Base 60 */}
 			<TimelineCard>
-				<AnimatedCard animationType="Slide_From_Left">
-					<BasicCard header="Base 60 Numbering">
-						<p className="text-xl">
-							There is another numbering system that we use every
-							day without realizing it: Base 60. It was developed
-							by the Sumerians in the 3rd millenium BC, and was
-							later used by the Babylonians, Egyptians, and
-							Greeks.
-						</p>
-					</BasicCard>
-				</AnimatedCard>
-				<AnimatedCard animationType="Slide_From_Right">
-					<BasicCard header="Applications of Base 60">
-						<p className="text-xl">
-							Although base 60 numeral systems are rare, there are
-							still many situations today where base 60 numbering
-							is used, including:
-						</p>
-						<ul className=" list-disc list-inside text-xl">
-							<li>
-								Time (60 seconds in a minute, 60 minutes in an
-								hour)
-							</li>
-							<li>Angles (360 degrees in a circle)</li>
-							<li>
-								Geographic coordinates (Latitude and Longitude)
-							</li>
-						</ul>
-					</BasicCard>
-				</AnimatedCard>
+				<div>
+					<AnimatedCard animationType="Slide_From_Left">
+						<BasicCard header="Base 60 Numbering">
+							<p className="text-xl">
+								There is another numbering system that we use
+								every day without realizing it: Base 60. It was
+								developed by the Sumerians in the 3rd millenium
+								BC, and was later used by the Babylonians,
+								Egyptians, and Greeks.
+							</p>
+						</BasicCard>
+					</AnimatedCard>
+					<AnimatedCard animationType="Slide_From_Right">
+						<BasicCard header="Applications of Base 60">
+							<p className="text-xl">
+								Although base 60 numeral systems are rare, there
+								are still many situations today where base 60
+								numbering is used, including:
+							</p>
+							<ul className=" list-disc list-inside text-xl">
+								<li>
+									Time (60 seconds in a minute, 60 minutes in
+									an hour)
+								</li>
+								<li>Angles (360 degrees in a circle)</li>
+								<li>
+									Geographic coordinates (Latitude and
+									Longitude)
+								</li>
+							</ul>
+						</BasicCard>
+					</AnimatedCard>
+				</div>
+				<div className="w-[90vw] xl:flex xl:flex-row">
+					<div className="w-full mx-2">
+						<AnimatedCard animationType="Expand_From_Left">
+							<ImageCard
+								src="/compass.jpg"
+								alt="compass"
+								fit="contain"
+							/>
+						</AnimatedCard>
+					</div>
+					<div className="w-full mx-2">
+						<AnimatedCard animationType="Expand_From_Right">
+							<ImageCard src="/clock.webp" alt="clock" />
+						</AnimatedCard>
+					</div>
+				</div>
+				<div className="tallAbsolute tallRight">
+					<AnimatedCard animationType="Slide_From_Right">
+						<AudioCard src="" label="Base 60 Numbering" />
+					</AnimatedCard>
+				</div>
+			</TimelineCard>
+			{/* Calculator */}
+			<TimelineCard reverse>
+				<div>
+					<AnimatedCard animationType="Expand_From_Left">
+						<BasicCard header="Setting your Nspire to Binary or Hexadecimal">
+							<h2 className="text-lg">
+								The Ti-Nspire can be set to use either
+								hexadecimal or binary instead of base 10 to
+								represent integers. To change your settings,
+								follow these steps:
+							</h2>
+							<ol className=" list-decimal list-inside text-lg">
+								<li>Open a document or scratchpad</li>
+								<li>
+									Press the <code>DOC</code> button
+								</li>
+								<li>
+									Go to <code>7. Settings and Status</code>
+								</li>
+								<li>
+									Go to <code>2. Document Settings...</code>
+								</li>
+								<li>
+									Scroll down to <code>Base</code> and use the
+									dropdown menu to select <code>Binary</code>{" "}
+									or <code>Hexadecimal</code>
+								</li>
+							</ol>
+						</BasicCard>
+					</AnimatedCard>
+					<AnimatedCard animationType="Slide_From_Right">
+						<BasicCard header="Notes">
+							<ul className="list-disc list-inside text-lg">
+								<li>
+									Only integers can be represented in binary
+									or hexadecimal. Fractions and decimals will
+									be represented in base 10
+								</li>
+								<li>
+									To type in a hexadecimal number, you need to
+									prefix it with <code>0h</code>, for example
+									to type 47 in hexadecimal write{" "}
+									<code>0h2F</code>
+								</li>
+								<li>
+									To type binary numbers, prefix with{" "}
+									<code>0b</code> for example to write 13 in
+									binary type <code>0b1101</code>
+								</li>
+							</ul>
+						</BasicCard>
+					</AnimatedCard>
+				</div>
+				<div className="w-full">
+					<AnimatedCard animationType="Slide_From_Left">
+						<ImageCard
+							src="/DOC.png"
+							alt="DOC button"
+							fit="contain"
+							h="h-[23vh]"
+						/>
+					</AnimatedCard>
+					<AnimatedCard animationType="Slide_From_Left">
+						<ImageCard
+							src="/SETTINGS.png"
+							alt="Doc settings"
+							fit="contain"
+							h="h-[23vh]"
+						/>
+					</AnimatedCard>
+					<AnimatedCard animationType="Slide_From_Left">
+						<ImageCard
+							src="/BASE.png"
+							alt="Doc settings"
+							fit="contain"
+							h="h-[23vh]"
+						/>
+					</AnimatedCard>
+				</div>
 			</TimelineCard>
 			{/* Quiz Link */}
 			<TimelineCard>

@@ -5,5 +5,9 @@ export default function QuizLayout({
 }: {
 	children: React.ReactNode;
 }) {
-	return <TimelineContainer title="Quiz">{children}</TimelineContainer>;
+	return (
+		<>
+			<TimelineContainer title="Quiz">{children}</TimelineContainer>
+		</>
+	);
 }
