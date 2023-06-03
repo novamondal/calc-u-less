@@ -3,6 +3,8 @@ import AudioCard from "../Audio";
 import TimelineContainer, { TimelineCard } from "../Container";
 import QuizLink from "../QuizLink";
 import TextCard, { BasicCard, ImageCard } from "../StaticCard";
+import AnimatedGraphic from "./AnimatedGraphic";
+import Graphic from "./graphic";
 
 export default function HistoryOfCalc() {
 	return (
@@ -17,7 +19,7 @@ export default function HistoryOfCalc() {
 					/>
 				</AnimatedCard>
 				<div className="tallAbsolute">
-					<AnimatedCard animationType="Slide_From_Left">
+					<AnimatedCard animationType="Slide_From_Left" delay={2}>
 						<AudioCard
 							src="/most_common_spongebob.wav"
 							label="Most Common Numbering Systems"
@@ -25,7 +27,7 @@ export default function HistoryOfCalc() {
 					</AnimatedCard>
 				</div>
 				{/* </AnimatedCard> */}
-				<AnimatedCard animationType="Slide_From_Right">
+				<AnimatedCard animationType="Slide_From_Right" delay={1}>
 					{/* <AnimatedCard animationType="Fade"> */}
 					<div className="w-[90vw] xl:w-[40vw]">
 						<ImageCard
@@ -66,11 +68,13 @@ export default function HistoryOfCalc() {
 					</AnimatedCard>
 				</div>
 				<div className="tallAbsolute">
-					<AnimatedCard animationType="Slide_From_Right">
+					<AnimatedCard animationType="Slide_From_Right" delay={1}>
 						<AudioCard
 							src="/base10_patrick.wav"
 							label="Decimal Numbering"
 						/>
+					</AnimatedCard>
+					<AnimatedCard animationType="Slide_From_Right" delay={3}>
 						<AudioCard
 							src="/rogan_applications_base10.mp3"
 							label="Applications of Base 10"
@@ -140,8 +144,16 @@ export default function HistoryOfCalc() {
 						</BasicCard>
 					</AnimatedCard>
 					<div className="tallAbsolute tallRight pt-4">
-						<AnimatedCard animationType="Slide_From_Right">
+						<AnimatedCard
+							animationType="Slide_From_Right"
+							delay={1}
+						>
 							<AudioCard src="" label="Binary Numbering" />
+						</AnimatedCard>
+						<AnimatedCard
+							animationType="Slide_From_Right"
+							delay={3}
+						>
 							<AudioCard src="" label="Applications of Binary" />
 							{/* TODO: Generate audio clip */}
 						</AnimatedCard>
@@ -230,12 +242,10 @@ export default function HistoryOfCalc() {
 							</p>
 						</BasicCard>
 					</AnimatedCard>
-					<AnimatedCard animationType="Expand_From_Top">
-						<div className="xl:w-[50vw] 2xl:w-[60vw] transition-all ease-in-out">
+					<AnimatedCard animationType="Slide_From_Left">
+						<div className="xl:w-[50vw] 2xl:w-[60vw] transition-all ease-in-out text-center">
 							<BasicCard header="">
-								<div className="h-[55vh]">
-									TODO: Make a cool graphic and animate it
-								</div>
+								<AnimatedGraphic />
 							</BasicCard>
 						</div>
 					</AnimatedCard>

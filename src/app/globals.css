@@ -29,6 +29,20 @@ html {
 	}
 }
 
+@layer components {
+	.link {
+		word-break: break-word;
+		overflow-wrap: break-word;
+		-ms-word-break: break-word;
+		-webkit-hyphens: none;
+		-moz-hyphens: none;
+		hyphens: none;
+		-ms-hyphens: none;
+		word-wrap: break-word;
+		-ms-word-wrap: break-word;
+	}
+}
+
 @media (min-height: 950px) {
 	.tallChild {
 		@apply xl:h-screen;

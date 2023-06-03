@@ -54,7 +54,7 @@ export default function Home() {
 						href={"/timelines/numbering"}
 						className="md:text-5xl text-2xl underline my-4 hover:text-indigo-400 w-fit"
 					>
-						Alternate Numbering Systems
+						Alternative Numbering Systems
 					</Link>
 				</div>
 			</div>

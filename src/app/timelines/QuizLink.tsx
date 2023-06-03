@@ -60,11 +60,11 @@ export default function QuizLink({
 									// quiz
 									// 	? "mx-4 mb-4 text-2xl w-min underline hover:text-indigo-400"
 									// 	: "hidden"
-									`sm:mx-4 mb-4 xl:text-2xl sm:text-md text-xs w-min underline hover:text-indigo-400 ${
+									`sm:mx-4 mb-4 xl:text-2xl md:text-lg text-sm underline hover:text-indigo-400 ${
 										quiz
 											? ""
 											: "opacity-[10%] pointer-events-none"
-									}`
+									} link`
 								}
 							>
 								{DOMAIN_NAME + quizURL + quiz}
