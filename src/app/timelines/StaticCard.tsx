@@ -69,6 +69,7 @@ export function ImageCard({
 					className={imageClass}
 					placeholder="blur"
 					quality={50}
+					priority
 				/>
 			</div>
 		</div>
