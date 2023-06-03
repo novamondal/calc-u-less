@@ -96,7 +96,7 @@ export default function QuizLink({
 								/>
 							) : (
 								<div
-									className={`w-[500px] aspect-square flex-shrink m-4 bg-gradient-to-tr from-transparent to-zinc-400 rounded-md`}
+									className={`w-[500px] aspect-square flex-shrink m-4 bg-gradient-to-tr from-transparent to-zinc-400 rounded-md animate-pulse-slow`}
 								></div>
 							)}
 						</div>

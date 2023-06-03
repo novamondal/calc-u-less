@@ -44,14 +44,14 @@ export default function Home() {
 				</h2>
 				<div className="flex flex-col">
 					<Link
-						href={"/timelines/history"}
+						href={"/lessons/history"}
 						className="md:text-5xl text-2xl underline my-4 hover:text-indigo-400 w-fit"
 					>
 						History of Calculus
 					</Link>
 
 					<Link
-						href={"/timelines/numbering"}
+						href={"/lessons/numbering"}
 						className="md:text-5xl text-2xl underline my-4 hover:text-indigo-400 w-fit"
 					>
 						Alternative Numbering Systems

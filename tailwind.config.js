@@ -24,6 +24,9 @@ module.exports = {
 				"2xl": "1920px",
 				"xl": "1305px",
 			},
+			animation: {
+				"pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+			},
 		},
 		fontFamily: {
 			sans: ["Inter", "sans-serif"],

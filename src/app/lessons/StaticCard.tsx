@@ -67,8 +67,6 @@ export function ImageCard({
 					alt={alt}
 					fill={true}
 					className={imageClass}
-					placeholder="blur"
-					quality={50}
 					priority
 				/>
 			</div>

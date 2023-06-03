@@ -5,8 +5,8 @@ const inter = Inter({ subsets: ["latin"] });
 const quicksand = Quicksand({ subsets: ["latin"] });
 
 export const metadata = {
-	title: "We love Ms. Hanafi",
-	description: "Ms. Hanafi is the best teacher ever",
+	title: "Calculus is Awesome",
+	description: "Learning about calculus is the coolest thing ever",
 };
 
 export default function RootLayout({

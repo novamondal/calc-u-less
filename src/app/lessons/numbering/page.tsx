@@ -243,7 +243,7 @@ export default function HistoryOfCalc() {
 						</BasicCard>
 					</AnimatedCard>
 					<AnimatedCard animationType="Slide_From_Left">
-						<div className="xl:w-[50vw] 2xl:w-[60vw] transition-all ease-in-out text-center">
+						<div className="xl:w-[70vh] xl:h-[70vh] transition-all ease-in-out text-center">
 							<BasicCard header="">
 								<AnimatedGraphic />
 							</BasicCard>
@@ -260,7 +260,7 @@ export default function HistoryOfCalc() {
 			<TimelineCard>
 				<AnimatedCard animationType="Expand_From_Left">
 					<BasicCard header="Hexadecimal (Base 16) Numbering">
-						<p className="text-xl">
+						<p className="text-xl 2xl:text-2xl">
 							Another numbering system commonly used in computer
 							science is hexadecimal, or base 16. It is common in
 							computer science because one hexadecimal digit can
@@ -296,7 +296,7 @@ export default function HistoryOfCalc() {
 				<div>
 					<AnimatedCard animationType="Expand_From_Right">
 						<BasicCard header="Applications of Hexadecimal">
-							<p className="text-xl">
+							<p className="text-xl 2xl:text-2xl">
 								Hex numbering has many applications, primarily
 								in computer science due to its ability to
 								efficiently represent binary data. It offers a
@@ -350,7 +350,7 @@ export default function HistoryOfCalc() {
 				<div>
 					<AnimatedCard animationType="Slide_From_Left">
 						<BasicCard header="Base 60 Numbering">
-							<p className="text-xl">
+							<p className="text-xl 2xl:text-2xl">
 								There is another numbering system that we use
 								every day without realizing it: Base 60. It was
 								developed by the Sumerians in the 3rd millenium
@@ -361,7 +361,7 @@ export default function HistoryOfCalc() {
 					</AnimatedCard>
 					<AnimatedCard animationType="Slide_From_Right">
 						<BasicCard header="Applications of Base 60">
-							<p className="text-xl">
+							<p className="text-xl 2xl:text-2xl">
 								Although base 60 numeral systems are rare, there
 								are still many situations today where base 60
 								numbering is used, including:
@@ -407,7 +407,7 @@ export default function HistoryOfCalc() {
 				<div>
 					<AnimatedCard animationType="Expand_From_Left">
 						<BasicCard header="Setting your Nspire to Binary or Hexadecimal">
-							<h2 className="text-lg">
+							<h2 className="text-lg 2xl:text-2xl">
 								The Ti-Nspire can be set to use either
 								hexadecimal or binary instead of base 10 to
 								represent integers. To change your settings,

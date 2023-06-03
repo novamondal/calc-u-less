@@ -6,6 +6,22 @@
 	--slide-scale: 5%;
 }
 
+@layer base {
+	li {
+		@apply 2xl:text-2xl;
+	}
+	h2 {
+		@apply 2xl:text-2xl;
+	}
+	div,
+	p,
+	h2,
+	li,
+	h1 {
+		@apply transition-all ease-in-out duration-100;
+	}
+}
+
 @layer components {
 	.topText {
 		animation: slideX 5s ease-in-out infinite;
