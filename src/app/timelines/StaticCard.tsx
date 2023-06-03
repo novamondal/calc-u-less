@@ -62,7 +62,14 @@ export function ImageCard({
 			className={`bg-clip-border bg-gradient-to-tr from-emerald-400 to-blue-600 border-0 p-3 my-6 rounded-lg bg-fixed ${max_w}`}
 		>
 			<div className={containerClass}>
-				<Image src={src} alt={alt} fill={true} className={imageClass} />
+				<Image
+					src={src}
+					alt={alt}
+					fill={true}
+					className={imageClass}
+					placeholder="blur"
+					quality={50}
+				/>
 			</div>
 		</div>
 	);
