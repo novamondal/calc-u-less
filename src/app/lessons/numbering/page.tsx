@@ -4,7 +4,6 @@ import TimelineContainer, { TimelineCard } from "../Container";
 import QuizLink from "../QuizLink";
 import TextCard, { BasicCard, ImageCard } from "../StaticCard";
 import AnimatedGraphic from "./AnimatedGraphic";
-import Graphic from "./graphic";
 
 export default function HistoryOfCalc() {
 	return (
@@ -162,7 +161,7 @@ export default function HistoryOfCalc() {
 				<AnimatedCard animationType="Slide_From_Right">
 					<div className="xl:w-[45vw] w-[90vw]">
 						<ImageCard
-							src="/binary.jpg"
+							src="/binarycode.jpg"
 							alt="binary"
 							xl_h="xl:h-[80vh]"
 							h="h-[25vh]"

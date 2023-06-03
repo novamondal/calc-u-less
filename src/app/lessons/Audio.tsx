@@ -5,8 +5,7 @@ import {
 	HiOutlinePauseCircle,
 	HiOutlinePlayCircle,
 } from "react-icons/hi2";
-import { BiVolumeFull, BiVolumeMute } from "react-icons/bi";
-import { use, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface AudioPlayerProps {
 	src: string;
@@ -15,7 +14,6 @@ interface AudioPlayerProps {
 
 export default function AudioCard({ src, label }: AudioPlayerProps) {
 	const audioRef = useRef<HTMLAudioElement>(null);
-	const [muted, setMuted] = useState(false);
 	const [play, setPlay] = useState(false);
 
 	const progressRef = useRef<HTMLInputElement>(null);
@@ -48,14 +46,6 @@ export default function AudioCard({ src, label }: AudioPlayerProps) {
 		});
 	}, [progress]);
 
-	useEffect(() => {
-		if (
-			audioRef.current?.muted !== null &&
-			audioRef.current?.muted !== undefined
-		) {
-			audioRef.current.muted = muted;
-		}
-	}, [muted]);
 	return (
 		<div className="rounded-md bg-clip-border bg-gradient-to-tr from-rose-400 to-orange-500 border-2 my-2 border-transparent">
 			<div className="w-full p-2 bg-zinc-900 rounded-md align-middle">
@@ -65,19 +55,6 @@ export default function AudioCard({ src, label }: AudioPlayerProps) {
 						{label}
 					</h2>
 					<div className="flex items-center justify-center">
-						{/* <button
-							onClick={() => {
-								setMuted((p) => !p);
-							}}
-							className="active:opacity-[50%] transition-all duration-100 mx-4"
-							type="button"
-						>
-							{!muted ? (
-								<BiVolumeFull size="2em" color="#F43F5E" />
-							) : (
-								<BiVolumeMute size="2em" color="#F43F5E" />
-							)}
-						</button> */}
 						<button
 							onClick={() => {
 								if (audioRef.current?.currentTime) {
@@ -86,6 +63,7 @@ export default function AudioCard({ src, label }: AudioPlayerProps) {
 							}}
 							className="active:opacity-[50%] transition-all duration-100 mx-2"
 							type="button"
+							name="rewind"
 						>
 							<HiArrowUturnLeft size="2em" color="#F43F5E" />
 						</button>
@@ -95,6 +73,7 @@ export default function AudioCard({ src, label }: AudioPlayerProps) {
 							}}
 							className="active:opacity-[50%] transition-all duration-100 mx-2"
 							type="button"
+							name="play/pause"
 						>
 							{play ? (
 								<HiOutlinePauseCircle
@@ -112,7 +91,6 @@ export default function AudioCard({ src, label }: AudioPlayerProps) {
 							ref={progressRef}
 							type="range"
 							className="w-1/2 min-w-[6rem] appearance-none bg-gradient-to-r from-rose-400 to-orange-500 h-1 rounded-md"
-							// disabled={true}
 							onChange={(e) => {
 								if (audioRef.current?.duration) {
 									audioRef.current.currentTime =
