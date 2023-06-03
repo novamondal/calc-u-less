@@ -28,7 +28,7 @@ export default function HistoryOfCalc() {
 				{/* </AnimatedCard> */}
 				<AnimatedCard animationType="Slide_From_Right" delay={1}>
 					{/* <AnimatedCard animationType="Fade"> */}
-					<div className="w-[90vw] xl:w-[40vw]">
+					<div className="xl:w-[40vw]">
 						<ImageCard
 							src="/common_numbering.png"
 							alt="Common Numbering Systems"
@@ -242,7 +242,7 @@ export default function HistoryOfCalc() {
 						</BasicCard>
 					</AnimatedCard>
 					<AnimatedCard animationType="Slide_From_Left">
-						<div className="xl:w-[70vh] xl:h-[70vh] transition-all ease-in-out text-center">
+						<div className="xl:w-[70vh] xl:max-w-[60vw] xl:h-[65vh] transition-all ease-in-out text-center">
 							<BasicCard header="">
 								<AnimatedGraphic />
 							</BasicCard>

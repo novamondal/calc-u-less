@@ -47,10 +47,10 @@ export default function AudioCard({ src, label }: AudioPlayerProps) {
 	}, [progress]);
 
 	return (
-		<div className="rounded-md bg-clip-border bg-gradient-to-tr from-rose-400 to-orange-500 border-2 my-2 border-transparent">
+		<div className="rounded-md bg-clip-border bg-gradient-to-tr from-rose-400 to-orange-500 border-2 my-2 border-transparent overflow-hidden">
 			<div className="w-full p-2 bg-zinc-900 rounded-md align-middle">
 				<audio src={src} ref={audioRef} />
-				<div className="flex flex-row items-center w-full justify-between">
+				<div className="flex flex-row items-center w-full justify-between flex-wrap">
 					<h2 className="font-mono bg-gradient-to-tr mx-2 from-rose-400 to-orange-500 text-transparent bg-clip-text">
 						{label}
 					</h2>
