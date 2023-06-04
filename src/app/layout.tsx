@@ -1,8 +1,17 @@
 import "./globals.css";
-import { Inter, Quicksand } from "next/font/google";
+import { Inconsolata, Quicksand } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-const quicksand = Quicksand({ subsets: ["latin"] });
+const quicksand = Quicksand({
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-quicksand",
+});
+
+const inconsolata = Inconsolata({
+	subsets: ["latin"],
+	display: "swap",
+	variable: "--font-inconsolata",
+});
 
 export const metadata = {
 	title: "Calculus is Awesome",
@@ -16,7 +25,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={quicksand.className}>{children}</body>
+			<body
+				className={`${quicksand.variable} ${inconsolata.variable} font-sans`}
+			>
+				{children}
+			</body>
 		</html>
 	);
 }

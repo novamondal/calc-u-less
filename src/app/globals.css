@@ -25,7 +25,9 @@ html {
 
 @layer base {
 	code {
-		@apply font-mono font-light bg-slate-800 text-white rounded-md py-1 px-2 shadow-black shadow-sm;
+		@apply bg-slate-800 rounded-md py-1 px-2 shadow-black shadow-sm tracking-[0.15rem];
+		font-feature-settings: "zero";
+		font-variant-numeric: slashed-zero;
 	}
 }
 
@@ -75,8 +77,8 @@ input {
 }
 
 input[type="number"] {
-	-moz-appearance: textfield;
 	appearance: textfield;
+	-moz-appearance: textfield;
 }
 
 ::-webkit-scrollbar {

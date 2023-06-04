@@ -448,7 +448,7 @@ export default function HistoryOfCalc() {
 								<li>
 									To type binary numbers, prefix with{" "}
 									<code>0b</code> for example to write 13 in
-									binary type <code>0b1101</code>
+									binary type <span>0b1101</span>
 								</li>
 							</ul>
 						</BasicCard>
