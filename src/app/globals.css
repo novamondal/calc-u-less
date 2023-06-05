@@ -29,6 +29,12 @@ html {
 		font-feature-settings: "zero";
 		font-variant-numeric: slashed-zero;
 	}
+	ul {
+		@apply list-disc list-inside;
+	}
+	ol {
+		@apply list-decimal list-inside;
+	}
 }
 
 @layer components {
@@ -63,6 +69,12 @@ html {
 	}
 	.tallRight {
 		@apply xl:right-0;
+	}
+	.tallLeft {
+		@apply xl:left-0;
+	}
+	.tallRow {
+		@apply xl:flex xl:flex-row xl:gap-6;
 	}
 }
 

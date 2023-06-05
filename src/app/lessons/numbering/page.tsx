@@ -2,7 +2,7 @@ import AnimatedCard from "../AnimatedCard";
 import AudioCard from "../Audio";
 import TimelineContainer, { TimelineCard } from "../Container";
 import QuizLink from "../QuizLink";
-import TextCard, { BasicCard, ImageCard } from "../StaticCard";
+import TextCard, { Card, ImageCard } from "../StaticCard";
 import AnimatedGraphic from "./AnimatedGraphic";
 
 export default function HistoryOfCalc() {
@@ -52,7 +52,7 @@ export default function HistoryOfCalc() {
 						/>
 					</AnimatedCard>
 					<AnimatedCard animationType="Slide_From_Right">
-						<BasicCard header="Applications of Base 10">
+						<Card header="Applications of Base 10">
 							<ul className="list-disc list-inside md:text-2xl text-md">
 								<li>Most day-to-day math and arithmetic</li>
 								<li>Measurements</li>
@@ -63,7 +63,7 @@ export default function HistoryOfCalc() {
 									ID numbers, etc)
 								</li>
 							</ul>
-						</BasicCard>
+						</Card>
 					</AnimatedCard>
 				</div>
 				<div className="tallAbsolute">
@@ -95,7 +95,7 @@ export default function HistoryOfCalc() {
 			<TimelineCard>
 				<div className="relative xl:flex xl:flex-row xl:gap-6">
 					<AnimatedCard animationType="Expand_From_Left">
-						<BasicCard header="Binary (Base 2) Numbering">
+						<Card header="Binary (Base 2) Numbering">
 							<p className="2xl:text-2xl sm:text-lg text-sm transition-all ease-in-out">
 								{" "}
 								Binary is the language computers understand and
@@ -125,10 +125,10 @@ export default function HistoryOfCalc() {
 									true)
 								</li>
 							</ul>
-						</BasicCard>
+						</Card>
 					</AnimatedCard>
 					<AnimatedCard animationType="Expand_From_Right">
-						<BasicCard header="Applications of Binary">
+						<Card header="Applications of Binary">
 							<p className="2xl:text-2xl text-lg transition-all ease-in-out">
 								Binary has many uses, primarly with computers.
 								In addition to numbers, binary can be used to
@@ -140,7 +140,7 @@ export default function HistoryOfCalc() {
 								<li>Images using varius formats like BMP</li>
 								<li>Cryptography</li>
 							</ul>
-						</BasicCard>
+						</Card>
 					</AnimatedCard>
 					<div className="tallAbsolute tallRight pt-4">
 						<AnimatedCard
@@ -172,7 +172,7 @@ export default function HistoryOfCalc() {
 			{/* Converting to Binary */}
 			<TimelineCard reverse>
 				<AnimatedCard animationType="Expand_From_Left">
-					<BasicCard header="Converting to Binary">
+					<Card header="Converting to Binary">
 						<ol className="list-inside list-decimal 2xl:text-2xl xl:text-xl text-lg font-bold">
 							<li>
 								Take number and divide by 2, write down
@@ -220,11 +220,11 @@ export default function HistoryOfCalc() {
 								</p>
 							</li>
 						</ol>
-					</BasicCard>
+					</Card>
 				</AnimatedCard>
 				<div>
 					<AnimatedCard animationType="Slide_From_Right">
-						<BasicCard header="Reading Binary">
+						<Card header="Reading Binary">
 							<p className="text-xl">
 								In binary, each bit is a power of 2, starting
 								with 2<sup>0</sup> with the first digit on the
@@ -239,13 +239,13 @@ export default function HistoryOfCalc() {
 								0b1010 = 2<sup>1</sup> + 2<sup>3</sup> = 2 + 8 =
 								10
 							</p>
-						</BasicCard>
+						</Card>
 					</AnimatedCard>
 					<AnimatedCard animationType="Slide_From_Left">
 						<div className="xl:w-[70vh] xl:max-w-[60vw] xl:h-[65vh] transition-all ease-in-out text-center">
-							<BasicCard header="">
+							<Card header="">
 								<AnimatedGraphic />
-							</BasicCard>
+							</Card>
 						</div>
 					</AnimatedCard>
 				</div>
@@ -258,7 +258,7 @@ export default function HistoryOfCalc() {
 			{/* Base 16 */}
 			<TimelineCard>
 				<AnimatedCard animationType="Expand_From_Left">
-					<BasicCard header="Hexadecimal (Base 16) Numbering">
+					<Card header="Hexadecimal (Base 16) Numbering">
 						<p className="text-xl 2xl:text-2xl">
 							Another numbering system commonly used in computer
 							science is hexadecimal, or base 16. It is common in
@@ -290,11 +290,11 @@ export default function HistoryOfCalc() {
 								0x1A = 1*16<sup>1</sup> + 10*16<sup>0</sup> = 26
 							</li>
 						</ul>
-					</BasicCard>
+					</Card>
 				</AnimatedCard>
 				<div>
 					<AnimatedCard animationType="Expand_From_Right">
-						<BasicCard header="Applications of Hexadecimal">
+						<Card header="Applications of Hexadecimal">
 							<p className="text-xl 2xl:text-2xl">
 								Hex numbering has many applications, primarily
 								in computer science due to its ability to
@@ -323,10 +323,10 @@ export default function HistoryOfCalc() {
 									computers read in a more compact way
 								</li>
 							</ul>
-						</BasicCard>
+						</Card>
 					</AnimatedCard>
 					<AnimatedCard animationType="Expand_From_Top">
-						<div className="w-[90vw] xl:w-full ">
+						<div className="xl:w-full ">
 							<ImageCard
 								src="/hex.jpg"
 								alt="hexadecimal numbering"
@@ -348,7 +348,7 @@ export default function HistoryOfCalc() {
 			<TimelineCard>
 				<div>
 					<AnimatedCard animationType="Slide_From_Left">
-						<BasicCard header="Base 60 Numbering">
+						<Card header="Base 60 Numbering">
 							<p className="text-xl 2xl:text-2xl">
 								There is another numbering system that we use
 								every day without realizing it: Base 60. It was
@@ -356,10 +356,10 @@ export default function HistoryOfCalc() {
 								BC, and was later used by the Babylonians,
 								Egyptians, and Greeks.
 							</p>
-						</BasicCard>
+						</Card>
 					</AnimatedCard>
 					<AnimatedCard animationType="Slide_From_Right">
-						<BasicCard header="Applications of Base 60">
+						<Card header="Applications of Base 60">
 							<p className="text-xl 2xl:text-2xl">
 								Although base 60 numeral systems are rare, there
 								are still many situations today where base 60
@@ -376,7 +376,7 @@ export default function HistoryOfCalc() {
 									Longitude)
 								</li>
 							</ul>
-						</BasicCard>
+						</Card>
 					</AnimatedCard>
 				</div>
 				<div className="w-[90vw] xl:flex xl:flex-row">
@@ -405,7 +405,7 @@ export default function HistoryOfCalc() {
 			<TimelineCard reverse>
 				<div>
 					<AnimatedCard animationType="Expand_From_Left">
-						<BasicCard header="Setting your Nspire to Binary or Hexadecimal">
+						<Card header="Setting your Nspire to Binary or Hexadecimal">
 							<h2 className="text-lg 2xl:text-2xl">
 								The Ti-Nspire can be set to use either
 								hexadecimal or binary instead of base 10 to
@@ -429,10 +429,10 @@ export default function HistoryOfCalc() {
 									or <code>Hexadecimal</code>
 								</li>
 							</ol>
-						</BasicCard>
+						</Card>
 					</AnimatedCard>
 					<AnimatedCard animationType="Slide_From_Right">
-						<BasicCard header="Notes">
+						<Card header="Notes">
 							<ul className="list-disc list-inside text-lg">
 								<li>
 									Only integers can be represented in binary
@@ -451,7 +451,7 @@ export default function HistoryOfCalc() {
 									binary type <span>0b1101</span>
 								</li>
 							</ul>
-						</BasicCard>
+						</Card>
 					</AnimatedCard>
 				</div>
 				<div className="w-full">

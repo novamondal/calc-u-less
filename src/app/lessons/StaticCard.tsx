@@ -18,7 +18,7 @@ export default function TextCard({ header, body }: TextCardProps) {
 	);
 }
 
-export function BasicCard({
+export function Card({
 	header,
 	children,
 }: {
@@ -27,12 +27,12 @@ export function BasicCard({
 }) {
 	return (
 		<div className="bg-clip-border bg-gradient-to-tr from-purple-400 to-indigo-500 border-1 p-1 my-6 rounded-lg bg-fixed">
-			<div className="p-4 bg-zinc-900 rounded-md">
+			<section className="p-4 bg-zinc-900 rounded-md">
 				<h2 className="text-3xl bg-clip-text bg-gradient-to-tr from-green-300 to-blue-600 text-transparent">
 					{header}
 				</h2>
 				{children}
-			</div>
+			</section>
 		</div>
 	);
 }

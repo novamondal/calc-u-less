@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import AnimatedCard from "./AnimatedCard";
-import { BasicCard } from "./StaticCard";
+import { Card } from "./StaticCard";
 import {
 	DOMAIN_NAME,
 	HISTORY_QUIZ_URL_BASE,
@@ -30,7 +30,7 @@ export default function QuizLink({
 	return (
 		<div className="w-[75vw] overflow-hidden">
 			<AnimatedCard animationType="Fade">
-				<BasicCard header="Take the Quiz!">
+				<Card header="Take the Quiz!">
 					<div className="xl:flex xl:flex-row xl:items-center xl:justify-center xl:relative sm:px-2">
 						<div className="flex flex-col">
 							<div>
@@ -101,7 +101,7 @@ export default function QuizLink({
 							)}
 						</div>
 					</div>
-				</BasicCard>
+				</Card>
 			</AnimatedCard>
 			<footer className="h-[30vh]"></footer>
 		</div>
