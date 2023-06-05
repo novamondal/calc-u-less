@@ -222,6 +222,11 @@ export default function HistoryOfCalc() {
 						</ol>
 					</Card>
 				</AnimatedCard>
+				<div className="tallAbsolute tallRight">
+					<AnimatedCard animationType="Slide_From_Right">
+						<AudioCard src="" label="Converting to Binary" />
+					</AnimatedCard>
+				</div>
 				<div>
 					<AnimatedCard animationType="Slide_From_Right">
 						<Card header="Reading Binary">
@@ -247,11 +252,6 @@ export default function HistoryOfCalc() {
 								<AnimatedGraphic />
 							</Card>
 						</div>
-					</AnimatedCard>
-				</div>
-				<div className="tallAbsolute tallRight">
-					<AnimatedCard animationType="Slide_From_Right">
-						<AudioCard src="" label="Converting to Binary" />
 					</AnimatedCard>
 				</div>
 			</TimelineCard>
@@ -325,6 +325,17 @@ export default function HistoryOfCalc() {
 							</ul>
 						</Card>
 					</AnimatedCard>
+					<div className="tallAbsolute">
+						<AnimatedCard animationType="Slide_From_Left">
+							<AudioCard src="" label="Hexadecimal Numbering" />
+						</AnimatedCard>
+						<AnimatedCard animationType="Slide_From_Right">
+							<AudioCard
+								src=""
+								label="Applications of Hexadecimal"
+							/>
+						</AnimatedCard>
+					</div>
 					<AnimatedCard animationType="Expand_From_Top">
 						<div className="xl:w-full ">
 							<ImageCard
@@ -333,14 +344,6 @@ export default function HistoryOfCalc() {
 								xl_h="xl:h-[30vh]"
 							/>
 						</div>
-					</AnimatedCard>
-				</div>
-				<div className="tallAbsolute">
-					<AnimatedCard animationType="Slide_From_Left">
-						<AudioCard src="" label="Hexadecimal Numbering" />
-					</AnimatedCard>
-					<AnimatedCard animationType="Slide_From_Right">
-						<AudioCard src="" label="Applications of Hexadecimal" />
 					</AnimatedCard>
 				</div>
 			</TimelineCard>
@@ -379,6 +382,11 @@ export default function HistoryOfCalc() {
 						</Card>
 					</AnimatedCard>
 				</div>
+				<div className="tallAbsolute tallRight">
+					<AnimatedCard animationType="Slide_From_Right">
+						<AudioCard src="" label="Base 60 Numbering" />
+					</AnimatedCard>
+				</div>
 				<div className="w-[90vw] xl:flex xl:flex-row">
 					<div className="w-full mx-2">
 						<AnimatedCard animationType="Expand_From_Left">
@@ -394,11 +402,6 @@ export default function HistoryOfCalc() {
 							<ImageCard src="/clock.webp" alt="clock" />
 						</AnimatedCard>
 					</div>
-				</div>
-				<div className="tallAbsolute tallRight">
-					<AnimatedCard animationType="Slide_From_Right">
-						<AudioCard src="" label="Base 60 Numbering" />
-					</AnimatedCard>
 				</div>
 			</TimelineCard>
 			{/* Calculator */}

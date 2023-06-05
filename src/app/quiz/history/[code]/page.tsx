@@ -12,11 +12,11 @@ export default function HistoryQuiz({ params }: any) {
 
 	const [name, setName] = useState<string>("");
 
-	const [value, setValue] = useState<number | null>(null);
-	const valueAns = 69;
+	const [value, setValue] = useState<string | null>(null);
+	const valueAns = "69";
 
-	const [bonus, setBonus] = useState<number | null>(null);
-	const bonusAns = 420;
+	const [bonus, setBonus] = useState<string | null>(null);
+	const bonusAns = "420";
 	async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
 		e.preventDefault();
 		if (value === valueAns && name) {
