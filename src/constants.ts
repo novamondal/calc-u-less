@@ -8,4 +8,4 @@ export const QR_URL_BASE =
 	"https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=";
 
 export const INCORRECT_ALERT_MESSAGE =
-	"You suck at math, check your answers and try again";
+	"You should practice your math skills, check your answers and try again";
