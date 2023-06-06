@@ -13,10 +13,7 @@ export default function Home() {
 						Questions and research aided by ChatGPT
 					</p>
 					<p className="pointer-events-none flex place-items-center gap-2 p-8">
-						AI Images made with NightCafe
-					</p>
-					<p className="pointer-events-none flex place-items-center gap-2 p-8">
-						AI Voices made with FakeYou
+						Audio clips made with FakeYou AI voices
 					</p>
 					<p className="flex place-items-center gap-2 p-8">
 						Code by{" "}

@@ -147,13 +147,19 @@ export default function HistoryOfCalc() {
 							animationType="Slide_From_Right"
 							delay={1}
 						>
-							<AudioCard src="" label="Binary Numbering" />
+							<AudioCard
+								src="/ye_binary.wav"
+								label="Binary Numbering"
+							/>
 						</AnimatedCard>
 						<AnimatedCard
 							animationType="Slide_From_Right"
 							delay={3}
 						>
-							<AudioCard src="" label="Applications of Binary" />
+							<AudioCard
+								src="/kdot_binary.wav"
+								label="Applications of Binary"
+							/>
 							{/* TODO: Generate audio clip */}
 						</AnimatedCard>
 					</div>
@@ -224,7 +230,10 @@ export default function HistoryOfCalc() {
 				</AnimatedCard>
 				<div className="tallAbsolute tallRight">
 					<AnimatedCard animationType="Slide_From_Right">
-						<AudioCard src="" label="Converting to Binary" />
+						<AudioCard
+							src="/2pac_reading_binary.wav"
+							label="Reading Binary"
+						/>
 					</AnimatedCard>
 				</div>
 				<div>
@@ -325,13 +334,16 @@ export default function HistoryOfCalc() {
 							</ul>
 						</Card>
 					</AnimatedCard>
-					<div className="tallAbsolute">
+					<div className="tallAbsolute tallLeft">
 						<AnimatedCard animationType="Slide_From_Left">
-							<AudioCard src="" label="Hexadecimal Numbering" />
+							<AudioCard
+								src="/obama_hex.wav"
+								label="Hexadecimal Numbering"
+							/>
 						</AnimatedCard>
 						<AnimatedCard animationType="Slide_From_Right">
 							<AudioCard
-								src=""
+								src="/trump_hex.wav"
 								label="Applications of Hexadecimal"
 							/>
 						</AnimatedCard>
@@ -384,7 +396,10 @@ export default function HistoryOfCalc() {
 				</div>
 				<div className="tallAbsolute tallRight">
 					<AnimatedCard animationType="Slide_From_Right">
-						<AudioCard src="" label="Base 60 Numbering" />
+						<AudioCard
+							src="/biden_base60.wav"
+							label="Base 60 Numbering"
+						/>
 					</AnimatedCard>
 				</div>
 				<div className="w-[90vw] xl:flex xl:flex-row">
