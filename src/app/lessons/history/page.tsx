@@ -24,8 +24,8 @@ export default function HistoryOfCalc() {
 				<div className="tallAbsolute">
 					<AnimatedCard animationType="Slide_From_Right">
 						<AudioCard
-							src="/exodus_shapiro.mp3"
-							label="Eudoxus and Area by Exhaustion"
+							src="/shapiro_eudoxus.wav"
+							label="Eudoxus of Cnidus"
 							// TODO: update audio with proper name
 						/>
 					</AnimatedCard>
@@ -109,12 +109,15 @@ export default function HistoryOfCalc() {
 						</Card>
 					</AnimatedCard>
 				</div>
-				<div className="tallAbsolute tallLeft">
+				<div className="tallAbsolute tallLeft z-10">
 					<AnimatedCard animationType="Slide_From_Right" delay={2}>
-						<AudioCard src="" label="Descartes" />
+						<AudioCard src="/peter.wav" label="Descartes" />
 					</AnimatedCard>
 					<AnimatedCard animationType="Slide_From_Right" delay={3}>
-						<AudioCard src="" label="Method of Normals" />
+						<AudioCard
+							src="/sonic_normals.wav"
+							label="Method of Normals"
+						/>
 					</AnimatedCard>
 				</div>
 				<AnimatedCard animationType="Slide_From_Right" delay={1}>
@@ -164,11 +167,6 @@ export default function HistoryOfCalc() {
 						</ul>
 					</Card>
 				</AnimatedCard>
-				<div className="tallAbsolute">
-					<AnimatedCard animationType="Slide_From_Right" delay={2}>
-						<AudioCard src="" label="Cavalieri" />
-					</AnimatedCard>
-				</div>
 				<AnimatedCard animationType="Slide_From_Left">
 					<div className="xl:w-[40vw]">
 						<ImageCard
@@ -233,12 +231,15 @@ export default function HistoryOfCalc() {
 							</Card>
 						</AnimatedCard>
 					</div>
-					<div className="tallAbsolute tallRight">
+					<div className="tallAbsolute tallRight z-10">
 						<AnimatedCard
 							animationType="Slide_From_Right"
 							delay={1}
 						>
-							<AudioCard src="" label="Fermat's Method" />
+							<AudioCard
+								src="/michael_jackson_fermat.wav"
+								label="Fermat's Method"
+							/>
 						</AnimatedCard>
 					</div>
 					<AnimatedCard animationType="Slide_From_Left">
@@ -286,11 +287,6 @@ export default function HistoryOfCalc() {
 						</ul>
 					</Card>
 				</AnimatedCard>
-				<div className="tallAbsolute tallRight">
-					<AnimatedCard animationType="Slide_From_Right" delay={2}>
-						<AudioCard src="" label="Wallis" />
-					</AnimatedCard>
-				</div>
 				<AnimatedCard animationType="Slide_From_Right">
 					<div className="xl:w-[40vw]">
 						<ImageCard
@@ -351,7 +347,10 @@ export default function HistoryOfCalc() {
 				</AnimatedCard>
 				<div className="tallAbsolute">
 					<AnimatedCard animationType="Slide_From_Right" delay={2}>
-						<AudioCard src="" label="Newton and Leibniz" />
+						<AudioCard
+							src="/jones_newton.wav"
+							label="Newton and Leibniz"
+						/>
 					</AnimatedCard>
 				</div>
 				<AnimatedCard animationType="Slide_From_Left">
@@ -404,7 +403,10 @@ export default function HistoryOfCalc() {
 							animationType="Slide_From_Right"
 							delay={1}
 						>
-							<AudioCard src="" label="L'Hospital's Rule" />
+							<AudioCard
+								src="/clarkson_lhospital.wav"
+								label="L'Hospital's Rule"
+							/>
 						</AnimatedCard>
 					</div>
 					<div className="tallRow">
@@ -464,7 +466,7 @@ export default function HistoryOfCalc() {
 				</AnimatedCard>
 				<div className="tallAbsolute tallRight">
 					<AnimatedCard animationType="Slide_From_Left" delay={2}>
-						<AudioCard src="" label="Taylor" />
+						<AudioCard src="/shrek_taylor.wav" label="Taylor" />
 					</AnimatedCard>
 				</div>
 				<AnimatedCard animationType="Slide_From_Right">
@@ -528,7 +530,10 @@ export default function HistoryOfCalc() {
 				</AnimatedCard>
 				<div className="tallAbsolute">
 					<AnimatedCard animationType="Slide_From_Right" delay={2}>
-						<AudioCard src="" label="Euler's Method" />
+						<AudioCard
+							src="/morty_euler.wav"
+							label="Euler's Method"
+						/>
 					</AnimatedCard>
 				</div>
 				<AnimatedCard animationType="Slide_From_Left">
@@ -558,7 +563,10 @@ export default function HistoryOfCalc() {
 				</AnimatedCard>
 				<div className="tallAbsolute tallRight">
 					<AnimatedCard animationType="Slide_From_Left" delay={2}>
-						<AudioCard src="" label="Lagrange" />
+						<AudioCard
+							src="/donkey_lagrange.wav"
+							label="Lagrange"
+						/>
 					</AnimatedCard>
 				</div>
 				<AnimatedCard animationType="Slide_From_Right">
@@ -625,7 +633,7 @@ export default function HistoryOfCalc() {
 				</AnimatedCard>
 				<div className="tallAbsolute">
 					<AnimatedCard animationType="Slide_From_Right" delay={2}>
-						<AudioCard src="" label="Riemann" />
+						<AudioCard src="/david_riemann.wav" label="Riemann" />
 					</AnimatedCard>
 				</div>
 				<AnimatedCard animationType="Slide_From_Left">

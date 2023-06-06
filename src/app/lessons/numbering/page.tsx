@@ -5,7 +5,7 @@ import QuizLink from "../QuizLink";
 import TextCard, { Card, ImageCard } from "../StaticCard";
 import AnimatedGraphic from "./AnimatedGraphic";
 
-export default function HistoryOfCalc() {
+export default function Numbering() {
 	return (
 		<TimelineContainer title="Alternative Numbering Systems">
 			{/* Intro */}
