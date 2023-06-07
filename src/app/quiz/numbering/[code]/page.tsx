@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import QuestionField from "../../QuestionField";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../../../../../firebase";
-import { INCORRECT_ALERT_MESSAGE } from "@/constants";
+import { INCORRECT_ALERT_MESSAGE, BAD_USERNAMES } from "@/constants";
 import { useRouter } from "next/navigation";
 
 export default function NumberingQuiz({ params }: any) {
@@ -26,6 +26,10 @@ export default function NumberingQuiz({ params }: any) {
 
 	async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
 		e.preventDefault();
+		if (localStorage.getItem("banned") === "true") {
+			router.push("/quiz/banned");
+			return;
+		}
 		if (
 			question1?.toLowerCase() === ans1.toLowerCase() &&
 			name &&
@@ -55,6 +59,26 @@ export default function NumberingQuiz({ params }: any) {
 			return;
 		}
 	}
+	const punishmentRef = useRef<HTMLAudioElement>(null);
+	if (localStorage.getItem("banned") === "true") {
+		punishmentRef.current?.play();
+		router.push("/quiz/banned");
+		return (
+			<div>
+				<h1 className="text-9xl">
+					You idiot, you're not funny. You've been banned from
+					submitting either quiz.
+				</h1>
+				<audio
+					src="/metal-pipe-clang.mp3"
+					autoPlay
+					loop
+					ref={punishmentRef}
+				/>
+			</div>
+		);
+	}
+	punishmentRef.current?.pause();
 	return (
 		<div className="text-4xl">
 			<h1 className="mt-[-6rem] mb-8 font-bold bg-clip-text bg-gradient-radial from-orange-200 via-orange-400 to-rose-400 text-transparent">
@@ -64,10 +88,17 @@ export default function NumberingQuiz({ params }: any) {
 			<input
 				type="text"
 				onChange={(e) => {
-					setName(e.target.value);
+					if (BAD_USERNAMES.includes(e.target.value.toLowerCase())) {
+						localStorage.setItem("banned", "true");
+						router.push("/quiz/banned");
+						return;
+					} else {
+						setName(e.target.value);
+					}
 				}}
 				value={name}
 				className="bg-zinc-900 border-2 border-zinc-700 rounded-md p-2 max-w-full"
+				required
 			></input>
 			<QuestionField
 				value={question1}

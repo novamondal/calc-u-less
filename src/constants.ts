@@ -9,3 +9,46 @@ export const QR_URL_BASE =
 
 export const INCORRECT_ALERT_MESSAGE =
 	"You should practice your math skills, check your answers and try again";
+
+export const BAD_USERNAMES = [
+	"ur mom",
+	"your mom",
+	"your mother",
+	"ur mother",
+	"your m0m",
+	"urmom",
+	"yourmom",
+	"ur m0m",
+	"ur m0m",
+	"y0ur m0m",
+	"y0ur mom",
+	"y0ur mother",
+	"y0urmother",
+	"y0urm0m",
+	"y0urmom",
+	'ur "mom"',
+
+	"ur dad",
+	"your dad",
+	"your father",
+	"ur father",
+	"your d@d",
+	"urdad",
+	"yourdad",
+	"ur d@d",
+	"ur d@d",
+	"y0ur d@d",
+	"y0ur dad",
+	"y0ur father",
+	"y0urfather",
+	"y0urd@d",
+	"y0urdad",
+	'ur "dad"',
+
+	"daddy",
+	"ur daddy",
+	"mommy",
+	"ur mommy",
+	"your daddy",
+	"your mommy",
+];
